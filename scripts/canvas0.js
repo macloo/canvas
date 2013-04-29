@@ -8,14 +8,18 @@ var canvas = document.getElementById('myCanvas'); // canvas with id="myCanvas"
 if (canvas.getContext) {
 	var ctx = canvas.getContext('2d');
 	
-	// drawing code here
+	
+	
+	// put your drawing code here, as many line as needed
+	
+	
 	
 } // close if
 } // close draw() function
 
 
-/*
-
+/* 
+--------------------------------------------------------------------------
 An alternative wrapper for the JavaScript for drawing on canvas is:
 
 
@@ -26,4 +30,6 @@ window.onload = function ()  {
 }
 
 
+NOTE: You must use  window.onload  with JavaScript for the canvas.
+-------------------------------------------------------------------------- 
 */
