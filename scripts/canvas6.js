@@ -11,7 +11,7 @@ if (canvas.getContext) {
 	var img = new Image();
 	img.onload = function() {
 		ctx.drawImage( img, 0, 0 ); // place image
-		for (var i = 0; i < 7; i++) {
+		for (var i = 0; i <= 7; i++) {
 			ctx.fillStyle = 'rgba(0,70,10,' + (.1 * i) + ')';
 			ctx.fillRect(i*50,0,50,250); // create one strip
 		}
