@@ -14,13 +14,13 @@ if (canvas.getContext) {
 	
 	function makeText(text) {
 		ctx.fillStyle = color1;
-		ctx.font      = "64px Sofadi One";
-		// the Google font is loaded in the HEAD of the HTML file
+		ctx.font      = "72px Rye";
+		// this Google font is loaded in the HEAD of the HTML file
 		ctx.fillText( text, x, y );
 		ctx.strokeText( text, x, y ); // default will be black
 	}
 	
-	setInterval(move, 3); // controls speed of motion
+	setInterval(move, 10); // controls speed of motion
 	
 	function move() {
 		if (x < 601) {
