@@ -35,8 +35,8 @@ if (canvas.getContext) {
 	ctx.strokeRect(0,0,600,400); // default stroke color is black 
 	// draws an outline around edge of this canvas
 
-	// this timeout adds a pause of 1/10 of 1 second, once  
-	var timeoutID = window.setTimeout(render, 100);
+	// this timeout adds a pause of 1 second, once  
+	var timeoutID = window.setTimeout(render, 1000);
 
 	function render() {
 		
