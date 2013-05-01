@@ -5,3 +5,5 @@ This small collection of HTML, CSS and JavaScript files is intended to help *com
 You can [view an introduction](http://www.slideshare.net/macloo/introduction-to-html5-canvas) to the canvas on SlideShare.
 
 Each example is very simple. Each one represents one small step toward learning to use the canvas. Most of the HTML pages include links to relevant tutorials.
+
+[See the wiki](https://github.com/macloo/canvas/wiki) for a list of links to tutorials I have used.
