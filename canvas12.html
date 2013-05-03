@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Canvas Playground 12</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+<style>
+button {
+	min-width: 145px;
+	border: 1px solid #666;
+	font-size: 100%;
+	text-align: center;
+	padding: 20px 10px;
+	margin-top: 20px;
+	float: left;
+}
+#controlA {
+	background: #0C78B3;
+	color: #fff;
+}
+#controlB {
+	background: #9DD1ED;
+}
+#reset {
+	background: #ccc;
+}
+#controlA:hover, #controlB:hover, #reset:hover {
+	background: #7DD497;
+	cursor: pointer;
+}
+canvas {
+	float: left;
+	margin: 20px 20px 20px 0;
+}
+</style>
+
+	<script src="scripts/canvas12.js"> </script>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script>
+	<![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+
+<h1>Canvas Playground</h1>
+
+<canvas id="myCanvas" width="601" height="401">
+	<p>Your browser does not support HTML5 canvas.</p>
+</canvas>
+
+
+<button id="controlA">Change Point A</button>
+<button id="controlB">Change Point B</button>
+<button id="reset">Reset A and B</button>
+
+
+<p class="clearfix">Understanding Bezier curves: The curve is controlled by two points, shown here as small squares. By moving either or both points, you change the curve. In this case, the start point and end point of the line do not change. But you can randomly change the position of either control point and see the effect on the line by clicking the appropriate button above.</p>
+
+<p><a href="index.html">Canvas Playground index</a></p>
+
+
+</div>
+</body>
+</html>
