@@ -88,14 +88,14 @@ if (canvas.getContext) {
 		var i = 0;
 		for (i = 0; i <= 24; i++) { // 24 vertical lines
 			ctx.beginPath();
-    		ctx.moveTo(0.5 + i*25, 0.5);
-    		ctx.lineTo(0.5 + i*25, 401);
-    		ctx.stroke();
+			ctx.moveTo(0.5 + i*25, 0.5);
+			ctx.lineTo(0.5 + i*25, 401);
+			ctx.stroke();
 		}
 		for (i = 0; i <= 16; i++) { // 16 horizontal lines
-    		ctx.moveTo(0.5, i*25 + 0.5);
-    		ctx.lineTo(600, 0.5 + i*25);
-    		ctx.stroke();
+			ctx.moveTo(0.5, i*25 + 0.5);
+			ctx.lineTo(600, 0.5 + i*25);
+			ctx.stroke();
 		}
 	
 		// set up the curve
