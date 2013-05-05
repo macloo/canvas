@@ -21,22 +21,23 @@ if (canvas.getContext) {
 	var color = "#FFF"; // set initial fill color to white
 	
 	function makeText(text) {
+		ctx.beginPath();
 		ctx.fillStyle = color;
 		ctx.font = "800 48px Stint Ultra Expanded"; 
 		// this Google font is loaded in the HEAD on the HTML
 		ctx.fillText( text, x, y );
+		ctx.closePath();
 	}
 	
 	// here we render the text in white, invisibly 
 	makeText("Here is some text.");
 	makeText("The sky is blue.");
-	ctx.fillRect(0,0,600,400); // fill the background (color still white)
+	
 
+	ctx.fillRect(0,0,600,400); // fill the background (color still white)
 	ctx.strokeRect(0,0,600,400); // default stroke color is black 
 	// draws an outline around edge of this canvas
 
-	// this timeout adds a pause of 1 second, once  
-	var timeoutID = window.setTimeout(render, 1000);
 
 	function render() {
 		
@@ -57,6 +58,10 @@ if (canvas.getContext) {
 		makeText("The sky is blue.");
 		
 	} // close render() function
-	
+
+	// this timeout adds a pause of 1 second, once  
+	var timeoutID = window.setTimeout(render, 1000);
+
+
 } // close if
 } // close draw() function

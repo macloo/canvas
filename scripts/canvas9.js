@@ -13,15 +13,15 @@ if (canvas.getContext) {
 	var color3 = "#D18EA9";
 	
 	function makeText(text) {
+		ctx.beginPath();
 		ctx.fillStyle = color1;
 		ctx.font      = "72px Rye";
 		// this Google font is loaded in the HEAD of the HTML file
 		ctx.fillText( text, x, y );
 		ctx.strokeText( text, x, y ); // default will be black
+		ctx.closePath();
 	}
-	
-	setInterval(move, 10); // controls speed of motion
-	
+		
 	function move() {
 		if (x < 601) {
 			ctx.fillStyle = color3;
@@ -35,7 +35,9 @@ if (canvas.getContext) {
 			x = -400; // repositions text off left side of stage 
 		}
 	}
-	
-	
+
+	setInterval(move, 10); // controls speed of motion
+
+
 } // close if
 } // close draw() function
