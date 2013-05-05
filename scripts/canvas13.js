@@ -26,11 +26,7 @@ var canvas = document.getElementById('myCanvas'); // canvas with id="myCanvas"
 if (canvas.getContext) {
 	var ctx = canvas.getContext('2d');
 	
-	// detect mouse activity on the canvas
-	canvas.addEventListener('mouseup', up, false);	
-	canvas.addEventListener('mouseout', out, false);	
-	canvas.addEventListener('mousedown', down, false);
-	canvas.addEventListener('mousemove', move, false);	
+	// event listeners are below the following 4 functions
 	
 	// respond to mousedown
 	function down(e) {
@@ -72,6 +68,13 @@ if (canvas.getContext) {
 		dragging = false;
 		makeCurve();
 	}
+	
+	// detect mouse activity on the canvas
+	canvas.addEventListener('mouseup', up, false);	
+	canvas.addEventListener('mouseout', out, false);	
+	canvas.addEventListener('mousedown', down, false);
+	canvas.addEventListener('mousemove', move, false);	
+
 	
 	// this draws everything (once)
 	function makeCurve() {
