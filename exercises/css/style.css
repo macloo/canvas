@@ -1,0 +1,54 @@
+body {
+	margin: 30px auto;
+ 	background: #fff;
+	color: #000;
+ 	font-family: Verdana, sans-serif;
+	font-size: 100%;
+	line-height: 1.5em;
+}
+
+.beige-bg {
+	background: #E3DCCC;
+}
+
+
+#motoCanvas {
+	border: 1px solid #D4C194;
+	background: #fff;
+}
+
+
+/* ---------- Divs --------- */
+
+#wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+
+
+
+/* --- Headings and Text --- */
+
+h1 {
+	font: normal 4em/1em Georgia, serif;
+ 	margin: 20px 0;
+}
+
+p {
+	font-size: 1.2em;
+	margin-top: 20px;
+}
+
+
+/* --------- Links --------- */
+
+a:link, a:visited, a:active { 
+	color: #00c; 
+	text-decoration: underline; 
+}
+
+a:hover { 
+	color: #c00; 
+	text-decoration: none; 
+}
